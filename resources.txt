@@ -1,0 +1,3 @@
+How do i check if language is english or not in the reviews: 
+https://towardsdatascience.com/4-python-libraries-to-detect-english-and-non-english-language-c82ad3efd430
+
