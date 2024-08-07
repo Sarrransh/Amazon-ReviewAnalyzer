@@ -49,7 +49,7 @@ def get_reviews(soup):
 det_login()
 
 for i in range(1,10):
-    url = 'https://www.amazon.in/Daikin-Inverter-Display-Technology-MTKL50U/product-reviews/B0BK1KS6ZD/ref=cm_cr_arp_d_paging_btm_next_2?ie=UTF8&reviewerType=all_reviews&pageNumber=' + str(i)
+    url = 'https://www.amazon.in/Aristocrat-Polypropylene-Lightweight-Combination-Warranty/product-reviews/B0D4VBLM2H/ref=cm_cr_arp_d_paging_btm_next_2?ie=UTF8&reviewerType=all_reviews'+'&pageNumber=' + str(i)
     soup=get_soup(url)
     get_reviews(soup)
     print(len(reviewlist))
@@ -63,7 +63,7 @@ product_name=product_name.replace(' ','_')
 
 
 def save_reviews_to_db():
-    table_name='table1'
+    table_name='table2'
     
     reviews=reviewlist
     try:
@@ -103,6 +103,7 @@ def save_reviews_to_db():
     except mysql.connector.Error as error:
         print(f"Failed to insert into MySQL table {error}")
 
+print(product_name)
 
 save_reviews_to_db()
 

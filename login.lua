@@ -4,11 +4,11 @@ function main(splash)
     splash:wait(2)
 
     -- Fill in login form
-    splash:evaljs('document.getElementById("ap_email").value = "saransh.hajare@gmail.com"')
+    splash:evaljs('document.getElementById("ap_email").value = "xxx@gmail.com"')
     splash:evaljs('document.getElementById("continue").click()')
     splash:wait(2)
 
-    splash:evaljs('document.getElementById("ap_password").value = "Saransh@amazon0605"')
+    splash:evaljs('document.getElementById("ap_password").value = "xxx@amazon0605"')
     splash:evaljs('document.getElementById("signInSubmit").click()')
     splash:wait(2)
 
