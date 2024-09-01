@@ -21,6 +21,8 @@ def det_login():
         print("Login successful")
     else:
         print(f"Error during login: {r.status_code}")
+
+#login is not working, check later
     
 def get_soup(url):
     
